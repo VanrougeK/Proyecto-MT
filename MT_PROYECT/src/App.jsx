@@ -2,27 +2,23 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Servicios from "./components/Servicios";
-import Opiniones from "./components/Opiniones";
+import Galeria from "./components/Galeria";
 import Contacto from "./components/Contacto";
-import Footer from "./components/Footer";
+import Experiencia from "./components/Experiencia";
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
 
   return (
-    <div className="min-h-screen bg-white">
+    <div>
       <Navbar />
 
-      <main>
         <Hero />
+        <Galeria />
+        <Experiencia />
         <Servicios />
-        <Opiniones />
         <Contacto />
-      </main>
-
-      <Footer />
     </div>
   );
 }
 
-export default App;
+
