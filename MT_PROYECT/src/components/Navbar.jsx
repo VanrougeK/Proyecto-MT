@@ -13,7 +13,7 @@ export default function Navbar() {
 
     <ul>
       <li><a href="#galeria">Galeria</a></li>
-      <li><a href="#experiencia"><Experiencia/a></li>
+      <li><a href="#experiencia">Experiencia</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
