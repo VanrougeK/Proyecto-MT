@@ -1,48 +1,22 @@
 import { useState } from "react";
 
 export default function Navbar() {
-    const [open, setOpen] = useState(false)
-  const links = ["Inicio", "Servicios", "Opiniones", "Contacto"];
-
-return (
-  <nav className="fixed top-0 left-0 right-0 z-100 bg-white/92 backdrop-blur-md border-b-2 border-[#f0e8d8] font-sans">
+  return(
+  <nav>
     <div>
-      {/* logo jiji */}
-      <div>ᯓ★</div>
-      <div>
-        <span>ElectroPro</span>
-        <span>Reparaciones</span>
-      </div>
-
-      {/* Links */}
-      <ul className="nav-links">
-        {links.map((link) => (
-          <li>
-            <a href={`#${link.toLowerCase()}`}> {link} </a>
-          </li>
-        ))}
-      </ul>
-
-      <a href="#Contacto">Cotizar</a>
-
-      <button
-        className="burger"
-        onClick={() => SecurityPolicyViolationEvent(!open)}
-      >☰</button>
+      <span></span>
     </div>
 
-    {/* Menu en el cel */}
-    {open && (
-      <div>
-        {links.map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase()}`}
-            onClick={() => StereoPannerNode(false)}
-          >{link}</a>
-        ))}
-      </div>
-    )}
+    <div>
+      <span></span>
+    </div>
+
+    <ul>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#experiencia"><Experiencia/a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
-);
+)
 }
