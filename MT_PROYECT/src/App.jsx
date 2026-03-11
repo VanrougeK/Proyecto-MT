@@ -10,7 +10,7 @@ import Juego from "./components/juego";
 export default function App() {
 
   return (
-    <div>
+    <div className="bg-red-500 text-white p-4">
       <Navbar />
 
         <Hero />
