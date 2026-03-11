@@ -1,0 +1,49 @@
+import { useState } from "react";
+
+const levels = [
+    {id: 1, video: "en proceso", time: 30},
+    {id: 2, video: "en proceso", time: 25},
+    {id: 3, video: "en proceso", time: 25},
+    {id: 4, video: "en proceso", time: 20},
+    {id: 5, video: "en proceso", time: 20},
+]
+
+export default function Juego() {
+    const [levelAct, setLevelAct] = useState(0)
+    const [cont, setCont] = useState(0)
+    const [time, setTime] = useState(levels[0].time)
+    const [play, setPlay] = useState(false)
+    const [fin, setFin] = useState(false)
+
+    return(
+        <section>
+            <h2>Cuenta los gatitos!!</h2>
+
+            {!play && !fin && (
+                <div>
+                    <p>¿Cuantos gatitos puedes contar?</p>
+                    <button onClick={() => setPlay(true)}>Jugar</button>
+                </div>
+            )}
+
+            {play && !fin && (
+                <div>
+                    <p>Nivel {levels[levelAct].id} de {levels.length}</p>
+                    <p>{time} segundos</p>
+
+                    <video src={levels[levelAct].video} autoPlay muted></video>
+                </div>
+            )}
+
+            {fin && (
+                <div>
+                    <p>¡Terminaste!</p>
+                    <p>Contaste {cont} gatitos!</p>
+                    <button onClick={() => {setLevelAct(0), setCont(0), setTime(levels[0].time), setPlay(false), setFin (false)}}>
+                        Jugar de nuevo
+                    </button>
+                </div>
+            )}
+        </section>
+    )
+}
