@@ -10,7 +10,7 @@ export default function Hero() {
 
             {/* Hacer diseño gif aca */}
             <div>
-                <img src="" alt="Gif de personaje" />
+                <img src="/img/img-chibi.png" alt="Gif de personaje" />
             </div>
         </section>
     )

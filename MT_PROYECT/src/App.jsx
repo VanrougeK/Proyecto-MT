@@ -5,6 +5,7 @@ import Servicios from "./components/Servicios";
 import Galeria from "./components/Galeria";
 import Contacto from "./components/Contacto";
 import Experiencia from "./components/Experiencia";
+import Juego from "./components/juego";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
       <Navbar />
 
         <Hero />
+        <Juego />
         <Galeria />
         <Experiencia />
         <Servicios />

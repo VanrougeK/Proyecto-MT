@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const levels = [
     {id: 1, video: "en proceso", time: 30},
@@ -15,6 +15,25 @@ export default function Juego() {
     const [play, setPlay] = useState(false)
     const [fin, setFin] = useState(false)
 
+    useEffect (() => {
+        if(!play) return;
+
+        if(time === 0) {
+            if (levelAct + 1 < levels.length) {
+                const next = levelAct + 1
+                setLevelAct (next)
+                setTime(levels[next].time)
+            }else {
+                setPlay(false)
+                setFin(true)
+            } return
+        }
+
+        const timer = setTimeout(() => setTime(time - 1), 1000)
+        return () => clearTimeout(timer)
+    }, 
+    [play, time, levelAct])
+    
     return(
         <section>
             <h2>Cuenta los gatitos!!</h2>
