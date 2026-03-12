@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 export default function Galeria() {
   const items = [
@@ -34,7 +35,7 @@ export default function Galeria() {
             style={{ background: "rgba(255, 255, 255, 0.4" }}
           >
             <img
-              className="w-full h-48 object-cover"
+              className="w-full h-56 object-cover"
               src={item.img}
               alt={item.img}
             />

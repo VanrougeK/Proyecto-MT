@@ -1,11 +1,12 @@
+import React from "react";
 import { useEffect, useState } from "react";
 
 const levels = [
-    {id: 1, video: "en proceso", time: 30},
-    {id: 2, video: "en proceso", time: 25},
-    {id: 3, video: "en proceso", time: 25},
-    {id: 4, video: "en proceso", time: 20},
-    {id: 5, video: "en proceso", time: 20},
+    {id: 1, video: "public/video/video_5_30s.mp4", time: 30},
+    {id: 2, video: "public/video/video_7_30s.mp4", time: 30},
+    {id: 3, video: "public/video/video_4_25s.mp4", time: 25},
+    {id: 4, video: "public/video/video_6_20s.mp4", time: 20},
+    {id: 5, video: "public/video/video_2_20s.mp4", time: 20},
 ]
 
 export default function Juego() {

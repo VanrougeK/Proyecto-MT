@@ -1,10 +1,11 @@
 import { useState } from "react";
+import React from "react";
 
 export default function Experiencia() {
   const software = [
-    { id: 1, name: "Software 1", img: "url de imagen aca" },
-    { id: 2, name: "Software 2", img: "url de imagen aca" },
-    { id: 3, name: "Software 3", img: "url de imagen aca" },
+    { id: 1, name: "Ibis Paint X", img: "public/img/ibis-paint-x_logo.png" },
+    { id: 2, name: "Clip Paint Studio", img: "public/img/Clipstudiopaint_logo.png" },
+    { id: 3, name: "Blender", img: "public/img/blender_logo.png" },
   ];
 
   return (
@@ -36,7 +37,7 @@ export default function Experiencia() {
             style={{ background: "rgba(255, 255, 255, 0.4" }}
           >
             <img
-              className="w-16 h-16 object-contain"
+              className="w-20 h-20 object-contain"
               src={item.img}
               alt={item.name}
             />

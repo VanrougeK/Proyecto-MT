@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from "react";
 
 export default function Contacto() {
   const [form, setForm] = useState({ email: "", details: "", service: "" });
