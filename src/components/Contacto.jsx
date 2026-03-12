@@ -54,36 +54,36 @@ export default function Contacto() {
               placeholder="tucorreo@gmail.com"
               style={inputStyle}
             />
-            </div>
-
-            <div>
-              <label className="text-xs font-bold mb-2 block" style={{ color: "#a070c0"}}>Servicio:</label>
-              <select
-                name="service"
-                value={form.service}
-                onChange={handleChange}
-              >
-                <option value="">Opciones</option>
-                <option value="op1">Icono de perfil</option>
-                <option value="op2">Banner</option>
-                <option value="op3">Pareja</option>
-                <option value="op4">Fecha especial</option>
-              </select>
-            </div>
           </div>
 
           <div>
-            <label>Detalles del contacto:</label>
-            <textarea
-              name="details"
-              value={form.details}
-              onChange={handleChange}
-              placeholder="Detalles del servicio a solicitar"
-            ></textarea>
+            <label
+              className="text-xs font-bold mb-2 block"
+              style={{ color: "#a070c0" }}
+            >
+              Servicio:
+            </label>
+            <select name="service" value={form.service} onChange={handleChange}>
+              <option value="">Opciones</option>
+              <option value="op1">Icono de perfil</option>
+              <option value="op2">Banner</option>
+              <option value="op3">Pareja</option>
+              <option value="op4">Fecha especial</option>
+            </select>
           </div>
         </div>
 
-        <button type="submit">Confirmar solicitud</button>
+        <div>
+          <label>Detalles del contacto:</label>
+          <textarea
+            name="details"
+            value={form.details}
+            onChange={handleChange}
+            placeholder="Detalles del servicio a solicitar"
+          ></textarea>
+          <button type="submit">Confirmar solicitud</button>
+        </div>
+        
       </form>
     </section>
   );

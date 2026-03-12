@@ -2,9 +2,9 @@ import { useState } from "react";
 
 export default function Galeria() {
   const items = [
-    { id: 1, info: "Dibujo 1", img: "/img1.png" },
-    { id: 2, info: "Dibujo 2", img: "/img2.png" },
-    { id: 3, info: "Dibujo 3", img: "/img3.png" },
+    { id: 1, info: "Dibujo 1", img: "public/img/Scarlett.png" },
+    { id: 2, info: "Dibujo 2", img: "public/img/furro.png" },
+    { id: 3, info: "Dibujo 3", img: "public/img/quackity.png" },
   ];
   return (
     <section
