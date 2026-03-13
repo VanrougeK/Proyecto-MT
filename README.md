@@ -1,3 +1,5 @@
+No se asusten, tuve problemas con el vercel y tuve que crear otro repo y pasar lo que llevaba aqui al otro. Enalce del otro repo: https://github.com/VanrougeK/tunna.art
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
